@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La Seconde Guerre mondiale – Le Labo des Savoirs</title>
+<meta name="description" content="Séquence interactive sur la Seconde Guerre mondiale (CM) : cours, documents, questions, cartes et frises à compléter.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#haut" aria-label="Retour en haut"><img src="assets/logo.png" alt="Logo Le Labo des Savoirs"><b>Le Labo<br>des Savoirs</b></a>
+    <nav class="main" aria-label="Séances">
+      <a href="#s1" style="--c:#f26b1d">Séance 1</a>
+      <a href="#s2" style="--c:#1e88e5">Séance 2</a>
+      <a href="#s3" style="--c:#5a8210">Séance 3</a>
+      <a href="#s4" style="--c:#1b2a4a">Séance 4</a>
+      <a href="#bilan" style="--c:#c98f00">Bilan</a>
+    </nav>
+    <div class="tools">
+      <div class="progress" title="Activités corrigées automatiquement"><span id="pgtxt">0 / 0</span><div class="bar"><i id="pgbar"></i></div></div>
+      <button class="tbtn" id="profBtn" aria-pressed="false" title="Affiche les boutons de correction des questions ouvertes">✎ Enseignant</button>
+    </div>
+  </div>
+</header>
+
+<main id="haut">
+<section class="hero">
+  <div class="wrap hgrid">
+    <img class="logo-big" src="assets/logo.png" alt="Le Labo des Savoirs – Apprendre, découvrir, comprendre, s'amuser – par Heckel sans Jeckel">
+    <div>
+      <span class="kicker">Histoire · Séquence 6 · Cycle 3</span>
+      <h1>La <span>Seconde Guerre mondiale</span></h1>
+      <p class="lead">Que s'est-il passé ? Comment la guerre éclate-t-elle, comment vivent les Français sous l'Occupation, et comment la guerre se termine-t-elle ? Observe les documents, réponds aux questions, place les cartes et complète les frises pour mener l'enquête.</p>
+      <div class="how">
+        <span>📖 Je retiens</span><span>🔍 J'analyse des documents</span><span>🧩 Je place et je complète</span><span>❓ Que s'est-il passé ? Comment ? Pourquoi ?</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap tl-overview">
+    <h3>La frise de la séquence <small style="font-weight:600;font-size:.85rem;color:var(--muted)">(clique sur un événement)</small></h3>
+    <div class="tl-scroll"><div class="tl" id="tlOverview"></div></div>
+  </div>
+</section>
+
+<div class="wrap">
+
+<!-- ================= SÉANCE 1 ================= -->
+<section class="seance" id="s1" style="--c:#f26b1d">
+  <div class="s-head"><div class="s-num">1</div><div><h2>Qu'est-ce qui déclenche la Seconde Guerre mondiale ?</h2><p>Les causes : de la fête à la crise, des dictateurs à la guerre.</p></div></div>
+  <div class="s-body">
+
+    <div class="block retiens">
+      <h3><span class="ico">📖</span> Je retiens</h3>
+      <ul>
+        <li>La Première Guerre mondiale s'achève le <mark>11 novembre 1918</mark>. Les Européens ont alors envie de profiter de la vie : de <mark>1920 à 1929</mark>, ce sont les <b>années folles</b>. On danse sur du jazz, on va au spectacle, on s'amuse et on s'intéresse à la mode.</li>
+        <li>En <mark>1929</mark>, le <b>krach boursier</b> fait perdre sa valeur à l'argent. Dès 1930, la <b>crise économique</b> frappe l'Europe : la vie devient chère, beaucoup de personnes n'ont plus de travail (le <b>chômage</b>) et les Européens s'appauvrissent.</li>
+        <li>Dans ce contexte, des <b>dictateurs</b> arrivent au pouvoir : <b>Hitler</b> en Allemagne, <b>Mussolini</b> en Italie et <b>Staline</b> en URSS.</li>
+        <li>Hitler veut <b>conquérir l'Europe</b> et envahit la <b>Pologne</b>. Le <mark>3 septembre 1939</mark>, la France et le Royaume-Uni lui déclarent la guerre : c'est le début de la Seconde Guerre mondiale.</li>
+        <li>Deux camps s'affrontent : les <b>Alliés</b> (France, Royaume-Uni, URSS) et l'<b>Axe</b> (Allemagne, Italie, Japon).</li>
+      </ul>
+      <div class="note"><b>Pour aller plus loin :</b> Hitler a envahi la Pologne le 1<sup>er</sup> septembre 1939. Quant à l'URSS, elle ne combat réellement aux côtés des Alliés qu'à partir de 1941, quand l'Allemagne l'attaque à son tour.</div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🔍</span> Les documents</h3>
+      <div class="docs two">
+        <figure class="doc"><img src="assets/europe-1939-allies-axe.png" alt="Carte de l'Europe en 1939 avec les Alliés en rose et l'Axe en vert" loading="lazy"><figcaption><b>DOC 1</b> L'Europe en 1939 et les alliances. <span style="color:#d4488f">■ rose : les Alliés</span> — <span style="color:#6a9a00">■ vert : l'Axe</span></figcaption></figure>
+        <div class="docs" style="grid-template-columns:repeat(3,1fr);gap:10px">
+          <figure class="doc portrait"><img src="assets/hitler.jpg" alt="Portrait d'Hitler" loading="lazy"><figcaption><b>DOC 2</b> Hitler<br>(1933-1945)</figcaption></figure>
+          <figure class="doc portrait"><img src="assets/mussolini.jpg" alt="Portrait de Mussolini" loading="lazy"><figcaption><b>DOC 3</b> Mussolini (1922-1945)</figcaption></figure>
+          <figure class="doc portrait"><img src="assets/staline.jpg" alt="Portrait de Staline" loading="lazy"><figcaption><b>DOC 4</b> Staline<br>(1928-1953)</figcaption></figure>
+        </div>
+      </div>
+      <div class="method"><span>Je lis la carte</span><span>Je repère les couleurs de la légende</span><span>Je trouve les pays de chaque camp</span></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">❓</span> Je comprends : que s'est-il passé ? comment ? pourquoi ?</h3>
+      <div data-qcm="s1"></div>
+      <div data-open="s1"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🧩</span> Je place et je complète</h3>
+      <div data-act="s1-frise"></div>
+      <div data-act="s1-chaine"></div>
+      <div data-act="s1-dictateurs"></div>
+      <div data-act="s1-camps"></div>
+      <div data-act="s1-cloze"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SÉANCE 2 ================= -->
+<section class="seance" id="s2" style="--c:#1e88e5">
+  <div class="s-head"><div class="s-num">2</div><div><h2>La France sous l'occupation allemande</h2><p>Comment vivent les Français sous l'occupation allemande ?</p></div></div>
+  <div class="s-body">
+
+    <div class="block retiens">
+      <h3><span class="ico">📖</span> Je retiens</h3>
+      <ul>
+        <li>De <mark>septembre 1939 à mai 1940</mark>, les Français et les Britanniques essaient d'arrêter les Allemands (la <b>ligne Maginot</b> défend la frontière). Mais le nord de la France est vite envahi par les troupes allemandes. La population fuit l'invasion : c'est l'<b>exode</b>.</li>
+        <li>Le <mark>22 juin 1940</mark>, <b>Pétain</b>, chef du gouvernement, signe l'<b>armistice</b> avec Hitler. La France n'est plus en guerre, mais elle est coupée en deux : au Nord, une <b>zone occupée</b> par les Allemands ; au Sud, une <b>zone libre</b>.</li>
+        <li>À Paris, les noms de rue sont traduits en allemand et les soldats allemands sont partout. La vie est chère et la nourriture manque : il faut faire la <b>queue</b> devant les magasins pour acheter à manger.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🔍</span> Les documents</h3>
+      <h4>Doc A – La frise : la France dans la guerre</h4>
+      <div class="timeA" aria-label="Frise de 1939 à 1945" id="timeA"></div>
+      <div class="docs two">
+        <figure class="doc"><img src="assets/carte-offensives-1940.png" alt="Carte des offensives allemandes en 1940" loading="lazy"><figcaption><b>CARTE</b> Les offensives allemandes en 1940 (ligne Maginot, offensives allemandes, avance maximale de l'armée allemande, repli de l'armée franco-britannique, limite sud de l'occupation fixée par l'armistice).</figcaption></figure>
+        <figure class="doc"><img src="assets/exode.jpg" alt="Photo de civils sur les routes pendant l'exode" loading="lazy"><figcaption><b>PHOTO</b> L'exode : les Français fuient l'invasion allemande (1940).</figcaption></figure>
+        <figure class="doc"><img src="assets/rivoli.jpg" alt="Soldats allemands près d'un panneau Rue de Rivoli à Paris" loading="lazy"><figcaption><b>DOC B</b> Soldats allemands près d'un panneau d'indication « Rue de Rivoli » – Paris (photo).</figcaption></figure>
+        <figure class="doc"><img src="assets/queue.jpg" alt="Queue devant un magasin à Paris" loading="lazy"><figcaption><b>DOC C</b> Queue devant un magasin – Paris (photo).</figcaption></figure>
+        <figure class="doc"><img src="assets/france-1942.png" alt="Carte de la France en 1942 : zone occupée, zone libre, zone annexée" loading="lazy"><figcaption><b>DOC D</b> Carte de la France en 1942.</figcaption></figure>
+        <figure class="doc"><img src="assets/france-occupee-legende.png" alt="La France occupée : légende des zones" loading="lazy"><figcaption><b>CARTE</b> La France occupée : zone annexée par l'Allemagne, zone occupée par les Allemands, zone libre et frontière entre zone occupée et zone libre.</figcaption></figure>
+      </div>
+      <div class="method"><span>Je décris chaque document</span><span>Je relie les documents entre eux</span><span>Je réponds avec une phrase</span></div>
+      <div data-open="s2"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">❓</span> Je comprends : que s'est-il passé ? comment ? pourquoi ?</h3>
+      <div data-qcm="s2"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🧩</span> Je place et je complète</h3>
+      <div data-act="s2-carte"></div>
+      <div data-act="s2-chaine"></div>
+      <div data-act="s2-cloze"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SÉANCE 3 ================= -->
+<section class="seance" id="s3" style="--c:#5a8210">
+  <div class="s-head"><div class="s-num">3</div><div><h2>Collaboration et Résistance</h2><p>Comment les Français réagissent-ils à l'Occupation allemande ?</p></div></div>
+  <div class="s-body">
+
+    <div class="block retiens">
+      <h3><span class="ico">📖</span> Je retiens</h3>
+      <p style="margin-top:0">Face à l'occupation allemande, les Français réagissent de deux façons très différentes.</p>
+      <ul>
+        <li><b>A) La Résistance.</b> Alors que la France est vaincue, le général <b>de Gaulle</b>, installé à Londres, invite les Français à poursuivre le combat contre les Allemands dans un discours diffusé à la radio : c'est l'<mark>Appel du 18 juin 1940</mark>, quelques jours avant l'armistice du 22 juin. Des Français deviennent <b>résistants</b> : ils sabotent par exemple les voies de communication pour lutter contre l'occupant.</li>
+        <li><b>B) La Collaboration.</b> Le <mark>24 octobre 1940</mark>, <b>Pétain</b> rencontre <b>Hitler</b> à <b>Montoire</b> et signe des accords qui marquent le début de la <b>collaboration</b>. Certains Français dénoncent des résistants et des Juifs ; d'autres s'engagent dans la <b>Milice</b> pour aider les Allemands à arrêter et à déporter les résistants et les Juifs.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🔍</span> Documents 1 et 2 : l'Appel du 18 juin et la Résistance</h3>
+      <div class="splitq">
+        <div>
+          <div class="textdoc">
+            <div class="tt">DOC 1 – Discours du général de Gaulle prononcé à la radio anglaise (18 juin 1940)</div>
+            <p class="quote" style="margin-bottom:0">« Moi, général de Gaulle, actuellement à Londres, j'invite les officiers et les soldats français qui se trouvent en territoire britannique ou qui viendraient à s'y trouver, avec leurs armes ou sans leurs armes, j'invite les ingénieurs et les ouvriers spécialistes des industries d'armement qui se trouvent en territoire britannique ou qui viendraient à s'y trouver, à se mettre en rapport avec moi. Quoi qu'il arrive, la flamme de la résistance française ne doit pas s'éteindre et ne s'éteindra pas. Demain comme aujourd'hui, je parlerai à la radio de Londres. »</p>
+          </div>
+        </div>
+        <figure class="doc"><img src="assets/degaulle.jpg" alt="Le général de Gaulle parlant devant un micro" loading="lazy"><figcaption><b>Photo</b> Le général de Gaulle à la radio de Londres.</figcaption></figure>
+      </div>
+      <div class="docs two" style="margin-top:16px">
+        <figure class="doc"><img src="assets/sabotage1.jpg" alt="Locomotive déraillée après un sabotage" loading="lazy"><figcaption><b>DOC 2</b> Sabotage de voies ferrées par des Résistants : un train déraillé.</figcaption></figure>
+        <figure class="doc"><img src="assets/sabotage2.jpg" alt="Un homme pose un explosif sur une voie ferrée" loading="lazy"><figcaption><b>DOC 2</b> Sabotage de voies ferrées par des Résistants.</figcaption></figure>
+      </div>
+      <div class="method"><span>Type de document ?</span><span>Qui ?</span><span>Quand ?</span><span>À qui s'adresse-t-il ?</span><span>Comment ?</span><span>Dans quel but ?</span><span>Mot le plus important ?</span><span>Lien avec les photos ?</span></div>
+      <div data-act="s3-surligne"></div>
+      <div data-open="s3a"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🔍</span> Document 3 : la rencontre de Montoire</h3>
+      <div class="docs two">
+        <figure class="doc"><img src="assets/montoire.jpg" alt="Poignée de main entre Pétain et Hitler à Montoire" loading="lazy"><figcaption><b>DOC 3</b> Entrevue de Montoire du 24 octobre 1940.</figcaption></figure>
+        <figure class="doc"><img src="assets/montoire-carte.png" alt="Carte de la France situant Montoire-sur-le-Loir" loading="lazy"><figcaption><b>CARTE</b> Où se trouve Montoire ?</figcaption></figure>
+      </div>
+      <div data-open="s3b"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🔍</span> Documents 4, 5 et 6 : les conséquences de la collaboration</h3>
+      <div class="docs">
+        <figure class="doc"><img src="assets/miliciens.jpg" alt="Miliciens arrêtant des résistants, 1943" loading="lazy"><figcaption><b>DOC 4</b> Des miliciens arrêtant des Résistants, 1943.</figcaption></figure>
+        <figure class="doc"><img src="assets/enfants-etoile.jpg" alt="Enfants juifs français portant l'étoile jaune" loading="lazy"><figcaption><b>DOC 5</b> Enfants juifs français portant l'étoile jaune, juin 1942.</figcaption></figure>
+        <figure class="doc"><img src="assets/enfants-etoile2.jpg" alt="Deux enfants juifs portant l'étoile jaune" loading="lazy"><figcaption><b>DOC 5 (bis)</b> Enfants juifs portant l'étoile jaune.</figcaption></figure>
+      </div>
+      <div class="docs two" style="margin-top:14px">
+        <figure class="doc portrait"><img src="assets/gamma.jpg" alt="Le gamma, symbole de la Milice française" loading="lazy"><figcaption><b>Symboles de la Milice française</b> Le gamma.</figcaption></figure>
+        <figure class="doc portrait"><img src="assets/milicien-uniforme.jpg" alt="Uniforme noir et béret de la Milice" loading="lazy"><figcaption><b>Symboles de la Milice française</b> L'uniforme noir et le béret.</figcaption></figure>
+      </div>
+      <figure class="doc" style="margin-top:16px"><img src="assets/lettre.png" alt="Lettre anonyme de dénonciation" loading="lazy"><figcaption><b>DOC 6</b> Un exemple de lettre anonyme de dénonciation.</figcaption></figure>
+      <div data-open="s3c"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">❓</span> Je comprends : que s'est-il passé ? comment ? pourquoi ?</h3>
+      <div data-qcm="s3"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🧩</span> Je place et je complète</h3>
+      <div data-act="s3-frise"></div>
+      <div data-act="s3-bins"></div>
+      <div data-act="s3-chaine"></div>
+      <div data-act="s3-cloze"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SÉANCE 4 ================= -->
+<section class="seance" id="s4" style="--c:#1b2a4a">
+  <div class="s-head"><div class="s-num">4</div><div><h2>La fin de la Seconde Guerre mondiale</h2><p>Comment la guerre se termine-t-elle ?</p></div></div>
+  <div class="s-body">
+
+    <div class="block retiens">
+      <h3><span class="ico">📖</span> Je retiens</h3>
+      <ul>
+        <li>Le <mark>7 décembre 1941</mark>, les Japonais attaquent par surprise la base navale américaine de <b>Pearl Harbor</b>. Les <b>États-Unis</b> entrent alors dans le conflit aux côtés des Alliés (France, Royaume-Uni) : la guerre devient vraiment <b>mondiale</b>.</li>
+        <li>Le <mark>6 juin 1944</mark>, c'est le <b>débarquement en Normandie</b> : Américains, Canadiens et Britanniques débarquent sur les plages normandes et repoussent les armées allemandes. L'Europe est peu à peu libérée de la domination allemande.</li>
+        <li>L'Allemagne signe sa reddition à Reims le <mark>7 mai 1945</mark>. L'armistice du <mark>8 mai 1945</mark> met fin à la guerre en Europe : c'est la victoire des Alliés et la chute de l'Allemagne nazie.</li>
+        <li>La guerre continue dans l'océan Pacifique : elle ne s'arrête que le <mark>2 septembre 1945</mark>, avec la capitulation du Japon.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🔍</span> Documents 1 : Pearl Harbor (7 décembre 1941)</h3>
+      <div class="docs">
+        <figure class="doc"><img src="assets/pearl-harbor-carte.png" alt="Carte de l'attaque japonaise sur Pearl Harbor, à Hawaï" loading="lazy"><figcaption><b>DOC 1</b> L'attaque de la base navale américaine de Pearl Harbor, 7 décembre 1941.</figcaption></figure>
+        <figure class="doc"><img src="assets/pearl-harbor1.jpg" alt="Navires en flammes à Pearl Harbor" loading="lazy"><figcaption><b>DOC 1</b> Pearl Harbor : attaque surprise des Japonais.</figcaption></figure>
+        <figure class="doc"><img src="assets/pearl-harbor2.jpg" alt="Fumées sur le port de Pearl Harbor" loading="lazy"><figcaption><b>DOC 1</b> Pearl Harbor après l'attaque.</figcaption></figure>
+        <figure class="doc"><img src="assets/pearl-harbor3.jpg" alt="Un cuirassé attaqué à Pearl Harbor" loading="lazy"><figcaption><b>DOC 1</b> Un navire de la base navale pendant l'attaque.</figcaption></figure>
+      </div>
+      <div data-open="s4a"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🔍</span> Documents 2, 3 et 4 : la fin de la guerre en Europe</h3>
+      <div class="docs two">
+        <figure class="doc"><img src="assets/debarquement.jpg" alt="Navires de débarquement sur les plages de Normandie" loading="lazy"><figcaption><b>DOC 2</b> Le débarquement en Normandie, 6 juin 1944 : Américains, Canadiens et Britanniques débarquent en France pour repousser les Allemands.</figcaption></figure>
+        <figure class="doc"><img src="assets/normandie-carte.png" alt="Carte des plages du débarquement : Utah, Omaha, Gold, Juno, Sword" loading="lazy"><figcaption><b>CARTE</b> Les plages du débarquement en Normandie.</figcaption></figure>
+        <figure class="doc"><img src="assets/reims.jpg" alt="Signature de l'acte de reddition à Reims" loading="lazy"><figcaption><b>DOC 3</b> La signature de l'acte de reddition des troupes du III<sup>e</sup> Reich à Reims, le 7 mai 1945.</figcaption></figure>
+        <figure class="doc"><img src="assets/figaro.png" alt="Une du journal Le Figaro : L'Allemagne a capitulé" loading="lazy"><figcaption><b>DOC 4</b> La Une du journal <i>Le Figaro</i>, 8 mai 1945. L'armistice du 8 mai 1945 met fin à la guerre en Europe, mais il faut attendre le 2 septembre 1945 pour que les Américains et les Japonais cessent le conflit dans l'océan Pacifique (capitulation japonaise).</figcaption></figure>
+      </div>
+      <h4 style="margin-top:18px">Autres images du débarquement</h4>
+      <div class="gallery">
+        <figure class="doc"><img src="assets/debarquement2.jpg" alt="Soldats alliés près d'un blockhaus sur une plage" loading="lazy"><figcaption>Soldats alliés sur une plage normande.</figcaption></figure>
+        <figure class="doc"><img src="assets/debarquement3.jpg" alt="La plage de débarquement vue du ciel" loading="lazy"><figcaption>Les plages le jour du débarquement.</figcaption></figure>
+        <figure class="doc"><img src="assets/normandie-loc.png" alt="Situation de la Normandie en France" loading="lazy"><figcaption>La Normandie dans la France.</figcaption></figure>
+      </div>
+      <div data-open="s4b"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">⚓</span> Un témoin du débarquement : le HMS Belfast</h3>
+      <p>Le <b>HMS Belfast</b>, un navire britannique, a participé au débarquement. Il est exposé aujourd'hui à Londres, sur la Tamise.</p>
+      <div class="gallery">
+        <figure class="doc"><img src="assets/belfast1.jpg" alt="Le HMS Belfast pendant la guerre" loading="lazy"><figcaption>Le HMS Belfast pendant la guerre.</figcaption></figure>
+        <figure class="doc"><img src="assets/belfast2.jpg" alt="Le HMS Belfast sur la Tamise devant Tower Bridge" loading="lazy"><figcaption>Aujourd'hui, sur la Tamise, à Londres. <span class="credit">© L'ardoise à craie</span></figcaption></figure>
+        <figure class="doc"><img src="assets/belfast3.jpg" alt="La cloche et la bouée du HMS Belfast" loading="lazy"><figcaption>La cloche et la bouée. <span class="credit">© L'ardoise à craie</span></figcaption></figure>
+        <figure class="doc"><img src="assets/belfast4.jpg" alt="Le HMS Belfast et la Tamise" loading="lazy"><figcaption>Le navire amarré. <span class="credit">© L'ardoise à craie</span></figcaption></figure>
+        <figure class="doc"><img src="assets/belfast5.jpg" alt="Intérieur d'une tourelle du HMS Belfast" loading="lazy"><figcaption>À l'intérieur du navire. <span class="credit">© L'ardoise à craie</span></figcaption></figure>
+        <figure class="doc"><img src="assets/belfast6.jpg" alt="Les canons du HMS Belfast" loading="lazy"><figcaption>Les canons. <span class="credit">© L'ardoise à craie</span></figcaption></figure>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">❓</span> Je comprends : que s'est-il passé ? comment ? pourquoi ?</h3>
+      <div data-qcm="s4"></div>
+    </div>
+
+    <div class="block">
+      <h3><span class="ico">🧩</span> Je place et je complète</h3>
+      <div data-act="s4-frise"></div>
+      <div data-act="s4-bins"></div>
+      <div data-act="s4-cloze"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BILAN ================= -->
+<section class="seance" id="bilan" style="--c:#c98f00">
+  <div class="s-head"><div class="s-num">★</div><div><h2>Bilan de la séquence</h2><p>Je révise : frise complète, cartes mémo, fiches à compléter et synthèse.</p></div></div>
+  <div class="s-body">
+    <div class="block">
+      <h3><span class="ico">🧩</span> La grande frise</h3>
+      <div data-act="bilan-frise"></div>
+    </div>
+    <div class="block">
+      <h3><span class="ico">🃏</span> Cartes mémo : je connais les mots importants</h3>
+      <p>Retourne chaque carte pour vérifier la définition. Essaie de la dire avant de la retourner !</p>
+      <div class="flips" id="flips"></div>
+    </div>
+    <div class="block">
+      <h3><span class="ico">🪪</span> Fiches événement à compléter</h3>
+      <div data-act="bilan-fiches"></div>
+    </div>
+    <div class="block">
+      <h3><span class="ico">❓</span> Quiz final</h3>
+      <div data-qcm="bilan"></div>
+    </div>
+    <div class="block">
+      <h3><span class="ico">✍️</span> Je rédige ma synthèse</h3>
+      <div data-open="bilan"></div>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo.png" alt="Logo Le Labo des Savoirs">
+    <div>
+      <b>Le Labo des Savoirs</b> — Apprendre · Découvrir · Comprendre · S'amuser — par Heckel sans Jeckel.<br>
+      Séquence 6 d'histoire : La Seconde Guerre mondiale. Documents, cartes et photographies issus des fiches de l'<a href="https://www.ardoise-craie.fr" target="_blank" rel="noopener">ardoise à craie</a> (ardoise-craie.fr).
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-label="Image agrandie"><img alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>
